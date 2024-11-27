@@ -1,2 +1,2 @@
 # Crypto-Place-Website
-Built a responsive cryptocurrency tracking web application using React.js, designed to provide real-time updates on crypto prices, trends, and market insights. Implemented features such as interactive charts, live price tracking, and a search functionality for easy navigation. Utilized React Hooks and Context API for efficient state management and seamless user experience. Ensured a mobile-first design for optimal performance across all devices.
+
