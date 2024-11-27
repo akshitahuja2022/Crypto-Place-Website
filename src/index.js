@@ -1,13 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter } from "react-router-dom";
+import CoinContextProvider from "./Context/CoinContext";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      {/* we have wrap this app component in CoinContextProvider function.  we can access all the context data inside any component in this app component  */}
+      <CoinContextProvider>
+        <App />
+      </CoinContextProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
